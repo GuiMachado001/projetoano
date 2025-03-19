@@ -3,9 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     width: 100%;
     min-height: 100vh;
     background-color: #2C303A;
+
 }
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: rgb(33,37,41);
+    border-radius: 50px; 
+  }
+  .container{
+    width:100%;
+    height: 80vh;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+    overflow: auto;
+    /* text-align:center; */
+    color:white;
+    font-family:cursive;
+  }
+
+  
+  @keyframes love {
+    0%{top:110%}
+  }
+  @-webkit-keyframes love {
+    0%{top:110%}
+  }
+  @-moz-keyframes love {
+    0%{top:110%}
+  }
+  @-ms-keyframes love {
+    0%{top:110%}
+  }
