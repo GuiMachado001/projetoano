@@ -1,88 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #111;
-    flex-direction: column;
+  overflow-x: hidden;
+  background-color: #2C303A !important;
 }
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: rgb(33,37,41);
+    border-radius: 50px; 
+  }
 
-nav {
-    position: absolute !important;
-    top: 0;
-    left: 0;
+
+
+/* Garantir que o carrossel ocupe a largura correta */
+.swiper-container {
+    margin-top:30px;
+    background-color: #222121;
     width: 100%;
-    z-index: 5;
+    height: 300px; /* Ajuste de altura para as imagens */
 }
 
-.carrossel1, .carrossel {
-    margin-top: 60px;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+.swiper-slide img {
+    width: 230px; /* Reduzido para diminuir o tamanho das imagens */
+    height: 280px; /* Ajuste do tamanho das imagens */
+    object-fit: cover; /* Garantir que a imagem não distorça */
+    margin-top: 10px;
+    border-radius: 20px;
+    -webkit-filter: sepia(50%) brightness(80%) contrast(120%);
 }
 
-.items, .items2, .items3 {
-    display: flex;
-    width: calc(100% * 2); /* Necessário para duplicar as imagens corretamente */
-    animation: deslizar 20s linear infinite;
-}
-
-.items2 {
-    animation-duration: 30s;
-}
-
-.items3 {
-    animation-duration: 25s;
-}
-
-.item {
-    flex-shrink: 0; /* Impede que as imagens encolham */
-    margin-right: 10px; /* Ajuste o espaço entre as imagens */
-}
-
-.item img {
-    width: 250px; /* Largura fixa das imagens */
-    height: 300px; /* Altura fixa das imagens */
-    object-fit: cover; /* Ajuste das imagens para cobrir o espaço sem distorcer */
-}
-
-/* Animação para loop infinito */
-@keyframes deslizar {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%); /* Desliza para a esquerda até metade da largura total */
-    }
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .carrossel, .carrossel1 {
-        height: auto; /* Ajuste para dispositivos menores */
-    }
-
-    .items, .items2, .items3 {
-        animation-duration: 15s; /* Ajuste de tempo para o carrossel em dispositivos móveis */
-    }
-}
-
-@media (max-width: 480px) {
-    .carrossel, .carrossel1 {
-        height: auto;
-    }
-
-    .items, .items2, .items3 {
-        animation-duration: 15s; /* Ajuste para telas menores */
-    }
+/* Escondendo as setas de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important; /* Isso vai esconder as setas */
 }
