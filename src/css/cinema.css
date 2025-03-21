@@ -28,6 +28,7 @@ body {
     margin-top: 10px;
     border-radius: 20px;
     -webkit-filter: sepia(50%) brightness(80%) contrast(120%);
+    border: 3px solid black;
 }
 
 /* Escondendo as setas de navegação */
@@ -35,3 +36,4 @@ body {
 .swiper-button-prev {
     display: none !important; /* Isso vai esconder as setas */
 }
+

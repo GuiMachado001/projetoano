@@ -31,12 +31,13 @@
             spaceBetween: 5, // Reduz o espaço entre as imagens
             autoplay: {
                 delay: 0, // Sem delay, rotação contínua
-                disableOnInteraction: false, // O autoplay não será desativado após a interação
+                reverseDirection: true, // Faz o autoplay girar para a direita
+                disableOnInteraction: false, // O autoplay não será desativado após interação
             },
             speed: 8000, // Velocidade da transição entre os slides (mais lenta)
             slidesPerGroup: 1, // Faz com que cada slide seja exibido um por vez
             effect: 'slide', // Efeito de transição suave
-            direction: 'horizontal', // Direção para a esquerda
+            direction: 'horizontal', // Direção horizontal
             breakpoints: {
                 320: {
                     slidesPerView: 1,
@@ -49,6 +50,7 @@
                 },
             },
         });
+        
 
         const swiper3 = new Swiper('#carousel3', {
             loop: true, // Habilita o loop infinito
@@ -58,7 +60,7 @@
                 delay: 0, // Sem delay, rotação contínua
                 disableOnInteraction: false, // O autoplay não será desativado após a interação
             },
-            speed: 5000, // Velocidade da transição entre os slides (mais lenta)
+            speed: 4000, // Velocidade da transição entre os slides (mais lenta)
             slidesPerGroup: 1, // Faz com que cada slide seja exibido um por vez
             effect: 'slide', // Efeito de transição suave
             direction: 'horizontal', // Direção para a esquerda
@@ -81,9 +83,10 @@
             spaceBetween: 5, // Reduz o espaço entre as imagens
             autoplay: {
                 delay: 0, // Sem delay, rotação contínua
+                reverseDirection: true,
                 disableOnInteraction: false, // O autoplay não será desativado após a interação
             },
-            speed: 8000, // Velocidade da transição entre os slides (mais lenta)
+            speed: 9000, // Velocidade da transição entre os slides (mais lenta)
             slidesPerGroup: 1, // Faz com que cada slide seja exibido um por vez
             effect: 'slide', // Efeito de transição suave
             direction: 'horizontal', // Direção para a esquerda
@@ -108,7 +111,7 @@
                 delay: 0, // Sem delay, rotação contínua
                 disableOnInteraction: false, // O autoplay não será desativado após a interação
             },
-            speed: 5000, // Velocidade da transição entre os slides (mais lenta)
+            speed: 3000, // Velocidade da transição entre os slides (mais lenta)
             slidesPerGroup: 1, // Faz com que cada slide seja exibido um por vez
             effect: 'slide', // Efeito de transição suave
             direction: 'horizontal', // Direção para a esquerda
@@ -132,6 +135,7 @@
             spaceBetween: 5, // Reduz o espaço entre as imagens
             autoplay: {
                 delay: 0, // Sem delay, rotação contínua
+                reverseDirection: true,
                 disableOnInteraction: false, // O autoplay não será desativado após a interação
             },
             speed: 8000, // Velocidade da transição entre os slides (mais lenta)
