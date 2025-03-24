@@ -34,7 +34,7 @@
                 reverseDirection: true, // Faz o autoplay girar para a direita
                 disableOnInteraction: false, // O autoplay não será desativado após interação
             },
-            speed: 8000, // Velocidade da transição entre os slides (mais lenta)
+            speed: 5000, // Velocidade da transição entre os slides (mais lenta)
             slidesPerGroup: 1, // Faz com que cada slide seja exibido um por vez
             effect: 'slide', // Efeito de transição suave
             direction: 'horizontal', // Direção horizontal
@@ -60,7 +60,7 @@
                 delay: 0, // Sem delay, rotação contínua
                 disableOnInteraction: false, // O autoplay não será desativado após a interação
             },
-            speed: 4000, // Velocidade da transição entre os slides (mais lenta)
+            speed: 5000, // Velocidade da transição entre os slides (mais lenta)
             slidesPerGroup: 1, // Faz com que cada slide seja exibido um por vez
             effect: 'slide', // Efeito de transição suave
             direction: 'horizontal', // Direção para a esquerda
@@ -86,7 +86,7 @@
                 reverseDirection: true,
                 disableOnInteraction: false, // O autoplay não será desativado após a interação
             },
-            speed: 9000, // Velocidade da transição entre os slides (mais lenta)
+            speed: 5000, // Velocidade da transição entre os slides (mais lenta)
             slidesPerGroup: 1, // Faz com que cada slide seja exibido um por vez
             effect: 'slide', // Efeito de transição suave
             direction: 'horizontal', // Direção para a esquerda
@@ -111,7 +111,7 @@
                 delay: 0, // Sem delay, rotação contínua
                 disableOnInteraction: false, // O autoplay não será desativado após a interação
             },
-            speed: 3000, // Velocidade da transição entre os slides (mais lenta)
+            speed: 5000, // Velocidade da transição entre os slides (mais lenta)
             slidesPerGroup: 1, // Faz com que cada slide seja exibido um por vez
             effect: 'slide', // Efeito de transição suave
             direction: 'horizontal', // Direção para a esquerda
@@ -138,7 +138,7 @@
                 reverseDirection: true,
                 disableOnInteraction: false, // O autoplay não será desativado após a interação
             },
-            speed: 8000, // Velocidade da transição entre os slides (mais lenta)
+            speed: 5000, // Velocidade da transição entre os slides (mais lenta)
             slidesPerGroup: 1, // Faz com que cada slide seja exibido um por vez
             effect: 'slide', // Efeito de transição suave
             direction: 'horizontal', // Direção para a esquerda
