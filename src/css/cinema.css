@@ -54,7 +54,7 @@ body {
     height: 130px; /* Ajuste do tamanho das imagens */
 }
 }
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 1023px) {
 
   .swiper-container {
     height: 200px; /* Ajuste de altura para as imagens */
