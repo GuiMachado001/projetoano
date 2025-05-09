@@ -13,7 +13,32 @@ var love = setInterval(function(){
   },500);
   
   var i = 0;
-  var txt1 = "OLá meu amor, feliz um ano para a gente!!! << Não sei por onde começar essa carta, entao vamos do início,...<< Não lembro de como eram os dias antes de te conhecer, não lembro da minha rotina, mas lembro dos meus sentimentos, eu sentia que a felicidade era uma ilusão, que eu iria apenas viver uma vida comum esperando pelo fim,  eu sentia que estava navegando pela vida sozinho e perdido, sem uma bulsola para me guiar... E então você apareceu. Como se fosse o farol em meio à tempestade, me mostrando um novo rumo. Foi aí que percebi que, na verdade, eu sempre estive te procurando. Assim como um pirata sonha em encontrar o maior dos tesouros, eu encontrei em você algo mais valioso do que qualquer ouro ou prata. << Talvez seja clichê eu utilizar frases de anime, mas uma vez o Sanji disse para a Puddin 'Seus Olhos... São lindos', mas essa frase pertence a você Seus olhos têm um brilho que ilumina até os dias mais sombrios, e cada vez que me perco neles, me sinto em casa << E se um dia você sentir medo ou incerteza, lembre-se do que Luffy disse a Shirahoshi: 'Você não precisa ter medo, eu estou aqui.' Eu estarei ao seu lado em cada desafio, segurando sua mão com a mesma firmeza com que um capitão segura o leme durante a tempestade. Porque não importa quão difícil seja a jornada, se estivermos juntos, nenhum oceano será grande demais.|";
+  var txt1 = `Olá, meu amor. Feliz um ano para nós!<<
+
+Não sei bem por onde começar essa carta… então vamos do início.<<
+
+Sinceramente, eu não lembro exatamente como eram os meus dias antes de te conhecer.<
+Não lembro da minha rotina, mas lembro de como eu me sentia.<
+Sentia que a felicidade era uma ilusão, que eu estava simplesmente vivendo, esperando o tempo passar, como se navegasse pela vida, sozinho, sem bússola.<<
+
+E então, você apareceu.<<
+
+Como um farol em meio à tempestade, você me mostrou um novo rumo.<
+Foi aí que percebi que, na verdade, eu sempre estive te procurando.<
+Como um pirata que sonha em encontrar o maior dos tesouros, eu encontrei em você algo mais precioso do que qualquer ouro ou prata.<<
+
+Pode até parecer clichê usar frases de anime, mas o Sanji uma vez disse à Pudding:< 
+"Seus olhos... são lindos."< 
+E essa frase, hoje, pertence a você.<
+Seus olhos têm um brilho que ilumina até os meus dias mais sombrios.<
+Sempre que me perco neles, me sinto em casa.<<
+
+E se um dia você sentir medo ou incerteza, lembre-se do que o Luffy disse à Shirahoshi:< 
+"Você não precisa ter medo, eu estou aqui."< 
+Eu estarei sempre ao seu lado, enfrentando cada desafio, segurando sua mão com a mesma firmeza com que um capitão segura o leme durante uma tempestade.<<
+
+Porque não importa o quão difícil seja a jornada, se estivermos juntos, nenhum oceano será grande demais.<
+|`;
   var speed = 50;
   typeWriter();
   function typeWriter() {
@@ -29,6 +54,25 @@ var love = setInterval(function(){
         }
       else
         document.getElementById("text1").innerHTML += txt1.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  function typeWriter() {
+    if (i < txt1.length) {        
+      if (txt1.charAt(i) == '<')
+        document.getElementById("text1").innerHTML += '</br>';
+      else if (txt1.charAt(i) == '>')
+        document.getElementById("text1").innerHTML = '';
+      else if (txt1.charAt(i) == '|') {
+        $(".bg_heart").css("background-image", "url('...')"); // sua imagem base64
+      } else {
+        document.getElementById("text1").innerHTML += txt1.charAt(i);
+      }
+  
+      // ⭐ Rolagem automática
+      document.getElementById("container").scrollTop = document.getElementById("text1").scrollHeight;
+  
       i++;
       setTimeout(typeWriter, speed);
     }

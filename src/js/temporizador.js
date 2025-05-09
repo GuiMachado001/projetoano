@@ -1,5 +1,5 @@
 function atualizarContagem() {
-    const dataInicio = new Date('2024-05-11T20:30:00'); // Data de início
+    const dataInicio = new Date('2024-05-11T00:00:00'); // Data de início
     const agora = new Date(); // Data e hora atual
 
     // Diferença em milissegundos
