@@ -23,7 +23,10 @@ nav{
   right: 0;
   margin: auto;
 }
-
+.coracao_menu{
+  width: 50px;
+  height: 50px;
+}
 @media (min-width: 400px) and (max-width: 600px) {
   .envelop {
     width: 20rem;
