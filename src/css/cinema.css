@@ -1,8 +1,7 @@
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   background-color: #2C303A !important;
-  width: 100%;
-  height: auto;
+
 }
 ::-webkit-scrollbar{
     width: 10px;
