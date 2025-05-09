@@ -13,7 +13,7 @@
             direction: 'horizontal', // Direção para a direita
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                 },
                 768: {
                     slidesPerView: 2,
@@ -40,7 +40,7 @@
             direction: 'horizontal', // Direção horizontal
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                 },
                 768: {
                     slidesPerView: 2,
@@ -66,7 +66,7 @@
             direction: 'horizontal', // Direção para a esquerda
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                 },
                 768: {
                     slidesPerView: 2,
@@ -92,7 +92,7 @@
             direction: 'horizontal', // Direção para a esquerda
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                 },
                 768: {
                     slidesPerView: 2,
@@ -117,7 +117,7 @@
             direction: 'horizontal', // Direção para a esquerda
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                 },
                 768: {
                     slidesPerView: 2,
@@ -144,7 +144,7 @@
             direction: 'horizontal', // Direção para a esquerda
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                 },
                 768: {
                     slidesPerView: 2,
@@ -169,7 +169,7 @@
             direction: 'horizontal', // Direção para a esquerda
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                 },
                 768: {
                     slidesPerView: 2,
